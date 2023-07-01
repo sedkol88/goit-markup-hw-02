@@ -2,18 +2,31 @@
 font-family: 'Roboto', sans-serif;*/
 
 :root {
+  /*Primary Brand*/
   --iris: #4d5ae5;
+  /*Pressed state*/
   --ocean: #404bbf;
+  /*Dark*/
   --navyblue: #2e2f42;
+  /*Success*/
   --green: #31d0aa;
+  /*Text */
   --slate: #434455;
+  /*Subtle Text*/
   --lightslate: #8e8f99;
+  /*Accent*/
   --cornflower: #e7e9fc;
+  /*Light*/
   --cloud: #f4f4fd;
+  /*Modal overlay*/
   --navybluemodal: #2e2f4266;
+  /*Hero background*/
   --grey: #2e2f42b2;
+  /*White background */
   --white: #ffffff;
+  /*Modal background */
   --dairy: #fcfcfc;
+  --additional-font: "Raleway", sans-serif;
 }
 
 body {
