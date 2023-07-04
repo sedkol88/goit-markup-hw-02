@@ -1,65 +1,121 @@
-/*font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;*/
-
 :root {
-  /*Primary Brand*/
-  --iris: #4d5ae5;
-  /*Pressed state*/
-  --ocean: #404bbf;
-  /*Dark*/
-  --navyblue: #2e2f42;
-  /*Success*/
-  --green: #31d0aa;
-  /*Text */
-  --slate: #434455;
-  /*Subtle Text*/
-  --lightslate: #8e8f99;
-  /*Accent*/
-  --cornflower: #e7e9fc;
-  /*Light*/
-  --cloud: #f4f4fd;
-  /*Modal overlay*/
-  --navybluemodal: #2e2f4266;
-  /*Hero background*/
-  --grey: #2e2f42b2;
-  /*White background */
-  --white: #ffffff;
-  /*Modal background */
-  --dairy: #fcfcfc;
-  --additional-font: "Raleway", sans-serif;
+  --brand-color-main: #4d5ae5;
+  --brand-color-first: #2e2f42;
+  --brand-color-second: #f4f4fd;
+  --bg-color-main: #ffffff;
+  --bg-color-first: #2e2f42;
+  --bg-color-second: #f4f4fd;
+  --link-color-active: #404bbf;
+  --font-logo: "Raleway", sans-serif;
+  --font-main: "Roboto", sans-serif;
+  --font-color-first: #2e2f42;
+  --font-color-second: #434455;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--slate);
-  background-color: var(--white);
-}
-
-a {
+.link {
   text-decoration: none;
   color: inherit;
 }
-
-ul {
-  list-style-type: none;
+.list {
+  list-style: none;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
 }
 
-.header {
-  /*
-  width: 1440px;
-  height: 72px;
-  flex-shrink: 0;
-  */
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color-main);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
 
-.footer {
-  /*
-  width: 1440px;
-  height: 312px;
-  flex-shrink: 0;
-  */
-  color: var(--cloud, #f4f4fd);
-  background: var(--navyblue, #2e2f42);
+.logo {
+  font-size: 18px;
+  font-family: var(--font-logo);
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
+.logo-begin {
+  color: var(--brand-color-main);
+}
+.logo-end-header {
+  color: var(--brand-color-first);
+}
+.logo-end-footer {
+  color: var(--brand-color-second);
+}
+
+/*======= header begin =======*/
+.head {
+  background-color: var(--bg-color-main);
+}
+.head-nav-item {
+  color: var(--font-color-first);
+  font-weight: 500;
+}
+.head-address-item {
+  color: var(--font-color-second);
+  font-style: normal;
+  font-weight: 400;
+}
+.head-nav-item:active,
+.head-address-email:active {
+  color: var(--link-color-active);
+}
+/* ========header end========== */
+
+/*========= main begin ========*/
+.hero {
+  background-color: var(--bg-color-first);
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+.hero-button {
+  color: #ffffff;
+  background-color: var(--brand-color-main);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+.hero-button:active {
+  background-color: var(--link-color-active);
+}
+
+.features-item-title {
+  color: var(--font-color-first);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+}
+.features-item-text {
+  color: var(--font-color-second);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+/*========= main end ==========*/
+
+/* ========footer begin======== */
+.foot {
+  background-color: var(--bg-color-first);
+}
+.foot-text {
+  color: var(--brand-color-second);
+  font-weight: 400;
+}
+/* ========footer end========== */
