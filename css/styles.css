@@ -19,32 +19,27 @@
 .list {
   list-style: none;
 }
-img {
-  display: block;
-}
 button {
   cursor: pointer;
 }
 
 body {
   font-family: var(--font-main);
-  color: var(--font-color-first);
   background-color: var(--bg-color-main);
+  color: var(--font-color-first);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
 .logo {
+  color: var(--logo-color-main);
   font-size: 18px;
   font-family: var(--font-logo);
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-}
-.logo-begin {
-  color: var(--logo-color-main);
 }
 .logo-end-header {
   color: var(--logo-color-first);
@@ -60,13 +55,17 @@ body {
 .head-nav-item {
   font-weight: 500;
 }
+.head-address {
+  font-style: normal;
+}
 .head-address-item {
   color: var(--font-color-second);
-  font-style: normal;
   font-weight: 400;
 }
 .head-nav-item:hover,
-.head-address-link:hover {
+.head-nav-item:focus,
+.head-address-link:hover,
+.head-address-link:focus {
   color: var(--link-color-active);
 }
 /* ========header end========== */
@@ -80,6 +79,7 @@ body {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  text-align: center;
 }
 .hero-btn {
   color: var(--bg-color-main);
@@ -92,6 +92,7 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus {
+  color: var(--bg-color-main);
   background-color: var(--link-color-active);
 }
 
@@ -100,22 +101,27 @@ body {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  text-align: center;
 }
 .item-title {
+  color: var(--font-color-first);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .item-text {
   color: var(--font-color-second);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 .team {
   background-color: var(--bg-color-second);
+}
+.team-list {
+  background-color: var(--bg-color-main);
 }
 
 .filter-btn {
