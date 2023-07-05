@@ -76,21 +76,23 @@ body {
   background-color: var(--bg-color-first);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--bg-color-main);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
 }
-.hero-button {
-  color: #ffffff;
+.hero-btn {
+  color: var(--bg-color-main);
   background-color: var(--logo-color-main);
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
 }
-.hero-button:active {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--link-color-active);
 }
 
@@ -116,6 +118,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+
+.team {
+  background-color: var(--bg-color-second);
+}
+
 .filter-btn {
   background-color: var(--bg-color-second);
   color: var(--logo-color-main);
@@ -124,6 +131,10 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+}
+.filter-btn:hover {
+  background-color: var(--link-color-active);
+  color: var(--bg-color-main);
 }
 /*========= main end ==========*/
 
