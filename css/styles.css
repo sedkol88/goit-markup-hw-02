@@ -28,6 +28,7 @@ button {
 
 body {
   font-family: var(--font-main);
+  color: var(--font-color-first);
   background-color: var(--bg-color-main);
   font-size: 16px;
   line-height: 1.5;
@@ -57,7 +58,7 @@ body {
   background-color: var(--bg-color-main);
 }
 .head-nav-item {
-  color: var(--font-color-first);
+  /* color: var(--font-color-first); */
   font-weight: 500;
 }
 .head-address-item {
@@ -65,8 +66,8 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-.head-nav-item:active,
-.head-address-email:active {
+.head-nav-item:hover,
+.head-address-link:hover {
   color: var(--link-color-active);
 }
 /* ========header end========== */
@@ -97,7 +98,7 @@ body {
 }
 
 .section-title {
-  color: var(--font-color-first);
+  /* color: var(--font-color-first); */
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -105,7 +106,7 @@ body {
   text-transform: capitalize;
 }
 .item-title {
-  color: var(--font-color-first);
+  /* color: var(--font-color-first); */
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
