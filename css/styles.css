@@ -8,8 +8,8 @@
   --link-color-active: #404bbf;
   --font-logo: "Raleway", sans-serif;
   --font-main: "Roboto", sans-serif;
-  --font-color-first: #2e2f42;
-  --font-color-second: #434455;
+  --font-color-second: #2e2f42;
+  --font-color-first: #434455;
 }
 
 .link {
@@ -62,8 +62,8 @@ body {
   color: var(--font-color-second);
   font-weight: 400;
 }
-.head-nav-item:hover,
-.head-nav-item:focus,
+.head-nav-link:hover,
+.head-nav-link:focus,
 .head-address-link:hover,
 .head-address-link:focus {
   color: var(--link-color-active);
@@ -97,6 +97,7 @@ body {
 }
 
 .section-title {
+  color: var(--font-color-second);
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.72px;
@@ -104,14 +105,14 @@ body {
   text-align: center;
 }
 .item-title {
-  color: var(--font-color-first);
+  color: var(--font-color-second);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .item-text {
-  color: var(--font-color-second);
+  color: var(--font-color-first);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -121,6 +122,9 @@ body {
   background-color: var(--bg-color-second);
 }
 .team-list {
+  background-color: var(--bg-color-main);
+}
+.team-item {
   background-color: var(--bg-color-main);
 }
 
@@ -133,7 +137,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.64px;
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--link-color-active);
   color: var(--bg-color-main);
 }
