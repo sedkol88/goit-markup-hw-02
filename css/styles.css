@@ -52,14 +52,15 @@ body {
 .head {
   background-color: var(--bg-color-main);
 }
-.head-nav-item {
+.head-nav-link {
+  color: var(--font-color-second);
   font-weight: 500;
 }
 .head-address {
   font-style: normal;
 }
-.head-address-item {
-  color: var(--font-color-second);
+.head-address-link {
+  color: var(--font-color-first);
   font-weight: 400;
 }
 .head-nav-link:hover,
