@@ -32,6 +32,7 @@ body {
   letter-spacing: 0.32px;
 }
 
+/*--------- LOGO ------------------------*/
 .logo {
   color: var(--logo-color-main);
   font-size: 18px;
